@@ -3,6 +3,9 @@ For this project you will analyze the interactions that users have with articles
 
 This project is an academic study with Udacity on creating article recommendations.
 
+# GitHub link
+https://github.com/fmcgh/UdaRecommendationsWithIBM/tree/main
+
 ## Overview
 
 The project leverages a dataset containing user-article interactions and article metadata from the IBM Watson Studio platform. By applying several recommendation strategies, the study aims to personalize user experiences and improve how users find relevant articles. The project is divided into several parts:
