@@ -3,6 +3,48 @@ For this project you will analyze the interactions that users have with articles
 
 This project is an academic study with Udacity on creating article recommendations.
 
+## Overview
+
+The project leverages a dataset containing user-article interactions and article metadata from the IBM Watson Studio platform. By applying several recommendation strategies, the study aims to personalize user experiences and improve how users find relevant articles. The project is divided into several parts:
+
+- **Exploratory Data Analysis:**  
+  Understand the data, compute basic statistics, and prepare the dataset.
+
+- **Rank-Based Recommendations:**  
+  Recommend popular articles based on interaction counts.
+
+- **User-User Collaborative Filtering:**  
+  Recommend articles based on similar user behavior.
+
+- **Matrix Factorization:**  
+  Use Singular Value Decomposition (SVD) to extract latent features and predict user-item interactions.
+
+- **Content-Based Recommendations:**  
+  Explore recommendations based on article content.
+
+## Data Set Details
+
+- **user-item-interactions.csv:**  
+  Contains interactions between users and articles, including multiple interactions by the same user.
+
+- **articles_community.csv:**  
+  Contains metadata for articles on the IBM Watson Studio platform, including fields like article ID, title, and content descriptors.
+
+- **user_item_matrix.p:**  
+  A pickle file storing the preprocessed user-item matrix for use in matrix factorization.
+
+## Project Results
+
+The project produces several outputs:
+- **Exploratory Analysis:**  
+  Computes key statistics such as the median and maximum interactions per user, unique article counts, and identifies the most viewed article.
+
+- **Recommendation Lists:**  
+  Implements rank-based, collaborative filtering, and matrix factorization methods to generate lists of recommended article IDs and names.
+
+- **Evaluation Metrics:**  
+  Uses both offline tests (via the provided `project_tests.py`) and discussions on metrics like prediction error and user engagement (e.g., click-through rates) to assess recommendation performance.
+
 ## Requirements & Packages
 
 - **Python 3**
@@ -10,20 +52,6 @@ This project is an academic study with Udacity on creating article recommendatio
   - pandas
   - numpy
   - matplotlib
-
-# Recommendations with IBM
-
-This repository contains a project developed as part of an academic study for Udacity. The goal of this project is to build and evaluate a recommendation system for articles on the IBM Watson Studio platform using various approaches including exploratory data analysis, rank-based recommendations, user-user collaborative filtering, and matrix factorization.
-
-## Overview
-
-The project leverages a dataset containing user-article interactions and article metadata from the IBM Watson Studio platform. By applying several recommendation strategies, the study aims to personalize user experiences and improve how users find relevant articles. The project is divided into several parts:
-
-- **Exploratory Data Analysis:** Understand the data, compute basic statistics, and prepare the dataset.
-- **Rank-Based Recommendations:** Recommend popular articles based on interaction counts.
-- **User-User Collaborative Filtering:** Recommend articles based on similar user behaviors.
-- **Matrix Factorization:** Use Singular Value Decomposition (SVD) to extract latent features and predict user-item interactions.
-- **Content-Based Recommendations:** Explore recommendations based on article content.
 
 ## Project Structure
 
